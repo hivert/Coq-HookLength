@@ -1,7 +1,5 @@
 Require Import ssreflect ssrbool ssrnat eqtype seq bigop.
 
-Require Import Omega.
-
 Set Implicit Arguments.
 Unset Strict Implicit.
 Unset Printing Implicit Defensive.
