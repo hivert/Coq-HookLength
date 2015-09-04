@@ -22,7 +22,7 @@ Require Import ssreflect ssrfun ssrbool eqtype choice ssrnat seq
         ssrint div rat fintype bigop path ssralg ssrnum.
 (* Import bigop before ssralg/ssrnum to get correct printing of \sum \prod*)
 
-Require Import tools combclass ordtype subseq partition tableau schensted std invseq stdtab.
+Require Import tools combclass ordtype subseq partition tableau Schensted std stdtab.
 Require Import hook.
 
 (* TODO : Contribute to SSReflect/fintype.v *)

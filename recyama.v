@@ -2,7 +2,7 @@ Add Rec LoadPath "../Combi/LRrule".
 
 Require Import ssreflect ssrbool ssrfun ssrnat eqtype fintype choice seq.
 Require Import bigop ssrint rat ssralg ssrnum.
-Require Import tools combclass partition yama stdtab.
+Require Import tools combclass partition Yamanouchi stdtab.
 
 Set Implicit Arguments.
 Unset Strict Implicit.
