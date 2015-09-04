@@ -25,22 +25,6 @@ Require Import ssreflect ssrfun ssrbool eqtype choice ssrnat seq
 Require Import tools combclass ordtype subseq partition tableau Schensted std stdtab.
 Require Import hook.
 
-(* TODO : Contribute to SSReflect/fintype.v *)
-Section BijCard.
-
-Variables U V : finType.
-Variable f : U -> V.
-
-Lemma bij_card : bijective f -> #|U| = #|V|.
-Proof.
-  move=> [] g Hfg Hgf.
-  apply anti_leq; apply/andP; split.
-  - rewrite -(card_codom (can_inj Hfg)); exact: max_card.
-  - rewrite -(card_codom (can_inj Hgf)); exact: max_card.
-Qed.
-
-End BijCard.
-
 Section Identity.
 
 Definition is_stdtab_pair_of_shape sh p :=
